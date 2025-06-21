@@ -3,8 +3,7 @@ const app = express();
 const uploadRoutes = require('./routes/uploadRoute');
 
 
-const dotenv = require('dotenv')
-dotenv.config();
+require('dotenv').config();
 
 app.use(express.json());
 app.use('/api', uploadRoutes);
